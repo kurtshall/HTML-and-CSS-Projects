@@ -1,0 +1,9 @@
+p {
+	color: #800000;
+	background: #8FBC8F;
+	font-style: oblique;
+	text-align: center;
+}
+h1 {
+	text-shadow: 3px 3px green;
+}
