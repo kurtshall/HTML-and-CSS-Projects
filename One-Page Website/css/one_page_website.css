@@ -7,7 +7,20 @@ html {
 form {
     width: 40%;
     margin: 0px auto;
-    border: 3px solid green;
+    border: 0px;
     border-radius: 5px;
     background-color: rgb(240, 197, 197);
+    padding: 12px;
+}
+
+form input{
+    font-family:'Lucida Console';
+    font-size: medium;
+    color: rgb(54, 17, 88);    
+    width: 22.5%;
+    margin: 4px center;
+    border: 2px solid rgb(233, 116, 116);
+    border-radius: 5px;
+    background-color: rgb(240, 197, 197);
+    
 }
