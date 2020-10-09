@@ -4,6 +4,7 @@
 		<title>One With Nature</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="./css/one_page_website.css">
+		<script src="./js/one_page_website.js"></script>
 	</head>
 	<body>
 		
@@ -35,76 +36,168 @@
 		<section>
 			<div id="gallery">
 				<h1>Gallery</h1>
-				<div>
+				<div class="row">
 				
-					<!-- PHOTO-CONTAINER 1 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumb_1.jpg" alt="Pink Bulbs" width="300" height="200">
-						</div>
+				<!-- PHOTO-CONTAINER 1 -->
+				
+					<div class="column">
+						<img src="./images/thumb/thumb_1.jpg" onclick="openModal();currentSlide(1)" alt="Pink Bulbs" width="300" height="200">
 					</div>
-					<!-- END PHOTO-CONTAINER 1 -->
-					
-					<!-- PHOTO-CONTAINER 2 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumb_2.jpg" alt="Purple Bulbs" width="300" height="200">
-						</div>
+				
+				<!-- END PHOTO-CONTAINER 1 -->
+				
+				<!-- PHOTO-CONTAINER 2 -->
+				
+					<div class="column">
+						<img src="./images/thumb/thumb_2.jpg" onclick="openModal();currentSlide(2)" alt="Purple Bulbs" width="300" height="200">
 					</div>
-					<!-- END PHOTO-CONTAINER 2 -->
-					
-					<!-- PHOTO-CONTAINER 3 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumb_3.jpg" alt="Green Field" width="300" height="200">
-						</div>
+				
+				<!-- END PHOTO-CONTAINER 2 -->
+				
+				<!-- PHOTO-CONTAINER 3 -->
+				
+					<div class="column">
+						<img src="./images/thumb/thumb_3.jpg" onclick="openModal();currentSlide(3)" alt="Green Field" width="300" height="200">
 					</div>
-					<!-- END PHOTO-CONTAINER 3 -->
-					
-					<!-- PHOTO-CONTAINER 4 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumb_4.jpg" alt="Purple Orchid" width="300" height="200">
-						</div>
+				
+				<!-- END PHOTO-CONTAINER 3 -->
+				
+				<!-- PHOTO-CONTAINER 4 -->
+				
+					<div class="column">
+						<img src="./images/thumb/thumb_4.jpg" onclick="openModal();currentSlide(4)" alt="Purple Orchid" width="300" height="200">
 					</div>
-					<!-- END PHOTO-CONTAINER 4 -->
-					
-					<!-- PHOTO-CONTAINER 5 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumb_5.jpg" alt="White Orchid" width="300" height="200">
-						</div>
+				
+				<!-- END PHOTO-CONTAINER 4 -->
+				
+				<!-- PHOTO-CONTAINER 5 -->
+				
+					<div class="column">
+						<img src="./images/thumb/thumb_5.jpg" onclick="openModal();currentSlide(5)" alt="White Orchid" width="300" height="200">
 					</div>
-					<!-- END PHOTO-CONTAINER 5 -->
-					
-					<!-- PHOTO-CONTAINER 6 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumb_6.jpg" alt="Small White Flower" width="300" height="200">
-						</div>
+				
+				<!-- END PHOTO-CONTAINER 5 -->
+				
+				<!-- PHOTO-CONTAINER 6 -->
+				
+					<div class="column">
+						<img src="./images/thumb/thumb_6.jpg" onclick="openModal();currentSlide(6)" alt="Small White Flower" width="300" height="200">
 					</div>
-					<!-- END PHOTO-CONTAINER 6 -->
-					
-					<!-- PHOTO-CONTAINER 7 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumb_7.jpg" alt="Grey Cactus" width="300" height="200">
-						</div>
+				
+				<!-- END PHOTO-CONTAINER 6 -->
+				
+				<!-- PHOTO-CONTAINER 7 -->
+				
+					<div class="column">
+						<img src="./images/thumb/thumb_7.jpg" onclick="openModal();currentSlide(7)" alt="Grey Cactus" width="300" height="200">
 					</div>
-					<!-- END PHOTO-CONTAINER 7 -->
-					
-					<!-- PHOTO-CONTAINER 8 -->
-					<div>
-						<div>
-							<img src="./images/thumb/thumb_8.jpg" alt="Green Cactus" width="300" height="200">
-						</div>
+				
+				<!-- END PHOTO-CONTAINER 7 -->
+				
+				<!-- PHOTO-CONTAINER 8 -->
+				
+					<div class="column">
+						<img src="./images/thumb/thumb_8.jpg" onclick="openModal();currentSlide(8)" alt="Green Cactus" width="300" height="200">
 					</div>
-					<!-- END PHOTO-CONTAINER 8 -->
+				
+				<!-- END PHOTO-CONTAINER 8 -->
 					
 				</div>
 			</div>
 		</section>
 		<!-- END GALLERY -->
+
+		<!-- Modal/LightBox-->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="model-content">
+
+				<div class="mySlides">
+					<div class="numbertext">1 / 8</div>
+					<img src="./images/thumb/thumb_1.JPG" style="width: 100%;">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">2 / 8</div>
+					<img src="./images/thumb/thumb_2.JPG" style="width: 100%;">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">3 / 8</div>
+					<img src="./images/thumb/thumb_3.JPG" style="width: 100%;">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">4 / 8</div>
+					<img src="./images/thumb/thumb_4.JPG" style="width: 100%;">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">5 / 8</div>
+					<img src="./images/thumb/thumb_5.JPG" style="width: 100%;">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">6 / 8</div>
+					<img src="./images/thumb/thumb_6.JPG" style="width: 100%;">
+				</div>
+				
+				<div class="mySlides">
+					<div class="numbertext">7 / 8</div>
+					<img src="./images/thumb/thumb_7.JPG" style="width: 100%;">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">8 / 8</div>
+					<img src="./images/thumb/thumb_8.JPG" style="width: 100%;">
+				</div>
+
+				<!-- Next/Prev controls -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094</a>
+				<a class="prev" onclick="plusSlides(1)">&#10095</a>
+
+				<!-- Caption text-->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+
+				<!-- Thumbnail image control -->
+				<div class="column">
+					<img class="demo" src="./images/thumb/thumb_1.JPG" onclick="currentSlide(1)" alt="Pink Bulbs" width="300" height="200">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./images/thumb/thumb_2.JPG" onclick="currentSlide(2)" alt="Purple Bulbs" width="300" height="200">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./images/thumb/thumb_3.JPG" onclick="currentSlide(3)" alt="Green Field" width="300" height="200">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./images/thumb/thumb_4.JPG" onclick="currentSlide(4)" alt="Purple Orchid" width="300" height="200">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./images/thumb/thumb_5.JPG" onclick="currentSlide(5)" alt="White Orchid" width="300" height="200">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./images/thumb/thumb_6.JPG" onclick="currentSlide(6)" alt="Small White Flower" width="300" height="200">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./images/thumb/thumb_7.JPG" onclick="currentSlide(7)" alt="Grey Cactus" width="300" height="200">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./images/thumb/thumb_8.JPG" onclick="currentSlide(8)" alt="Green Cactus" width="300" height="200">
+				</div>
+
+			</div>
+		</div>
+
+
 		
 		<!-- VIDEO -->
 		<section>
